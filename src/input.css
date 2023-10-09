@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "space-mono";
+    font-size:24px;
+    font-weight: bold;
+    }
