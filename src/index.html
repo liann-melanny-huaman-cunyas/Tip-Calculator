@@ -19,39 +19,37 @@
         </div>
         <div class="bg-cyan-50 flex justify-between mx-5 rounded-2xl">
           <img class="mx-14 mt-1.5 my-15 h-6 w-5" src="./images/icon-dollar.svg">
-          <p class="mx-14 my-15">
-            180
-          </p>
+          <input type="number"  value="" class=" factura w-20 bg-cyan-50 ">
         </div>
       </div>
-  
+
       <div class=>
         <div class="m-5 text-cyan-800">
           Select Tip %
         </div>
         <div class="grid grid-rows-3 grid-flow-col">
           <div class="bg-cyan-950 h-14 w-44  hover:bg-cyan-300/50 hover:text-black text-white grid place-self-center rounded-2xl m-0.5">
-            <button class="grid place-content-center">
+            <button class="porcentaje5 grid place-content-center">
               5%
             </button>
           </div>
           <div class="bg-cyan-950 h-14 w-44 hover:bg-cyan-300/50 hover:text-black text-white grid place-self-center rounded-2xl m-0.5">
-            <button class="grid place-content-center">
+            <button class="porcentaje10 grid place-content-center">
               10%
             </button>
           </div>
           <div class="bg-cyan-950 h-14 w-44 hover:bg-cyan-300/50 hover:text-black text-white grid place-self-center rounded-2xl m-0.5">
-            <button class="grid place-content-center">
+            <button class="porcentaje15 grid place-content-center">
               15%
             </button>
           </div>
-          <div class="bg-cyan-950 h-14 w-44 hover:bg-cyan-300/50 hover:text-black text-white grid place-self-center rounded-2xl m-0.5">
-            <button class="grid place-content-center">
+          <div class=" bg-cyan-950 h-14 w-44 hover:bg-cyan-300/50 hover:text-black text-white grid place-self-center rounded-2xl m-0.5">
+            <button class="porcentaje25 grid place-content-center">
               25%
             </button>
           </div>
-          <div class="bg-cyan-950 h-14 w-44  text-white grid place-self-center rounded-2xl m-0.5">
-            <button class="grid place-content-center">
+          <div class="bg-cyan-950 h-14 w-44 hover:bg-cyan-300/50 hover:text-black text-white grid place-self-center rounded-2xl m-0.5">
+            <button class="porcentaje50 grid place-content-center">
               50%
             </button>
           </div>
@@ -62,16 +60,14 @@
           </div>
         </div>
       </div>
-  
       <div class="flex flex-col">
-        <div class="m-5 text-cyan-800"> 
+        <div class="m-5 text-cyan-800">
           Number of People
         </div>
         <div class="bg-cyan-50 flex justify-between mx-5 rounded-2xl">
           <img class="mx-14 mt-1.5 my-15 h-6 w-5" src="./images/icon-person.svg">
-          <p class="mx-14 my-15">
-            5
-          </p>
+          <input type="number"  value="" class=" cantidadpersonas w-20 bg-cyan-50 ">
+
         </div>
       </div>
       <div class="bg-cyan-950 flex flex-col my-7 mx-5 rounded-3xl h-60">
@@ -85,12 +81,12 @@
             </p>
           </div>
           <div>
-            <p class="m-5 text-cyan-200/80">
+            <p class=" propinapersona m-5 text-cyan-200/80">
               $ 12.5
             </p>
           </div>
         </div>
-        <div class="flex justify-between">
+        <div class="flex justify-between mb-7">
           <div class="mx-5 my-2 text-white">
             <p>
               Total
@@ -100,13 +96,13 @@
             </p>
           </div>
           <div>
-            <p class="text-cyan-200/80 m-5 ">
+            <p class="propinatotal text-cyan-200/80 m-5 ">
               $ 12.5
             </p>
           </div>
         </div>
-        <div class="bg-cyan-200/80 h-14 w-5/6 text-white grid place-self-center rounded-2xl">
-          <button class="text-cyan-900 grid place-content-center">
+        <div class="bg-cyan-200/80 h-14 w-5/6 text-white grid place-self-center rounded-2xl -mt-2">
+          <button class="reset text-cyan-900 grid place-content-center">
             Reset
           </button>
         </div>
@@ -114,5 +110,7 @@
     </div>
   </div>
 
+  <script src="./script.js">
+  </script>
 </body>
 </html>
