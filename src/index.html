@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,110 +7,117 @@
   <title>Tip calculator app</title>
 
 </head>
-<body class="bg-cyan-100/80">
-  <div class="grid place-items-center text-cyan-700 p-10 text-4xl">
+<body class="bg-cyan-100/80 lg:text-sm">
+
+  <div class="grid place-items-center p-10 lg:p-8">
     <img src="./images/logo.svg" class="grid place-content-center">
   </div>
-  <div class="h-[84vh] ">
-    <div class="bg-white rounded-3xl h-full ">
-      <div class="flex flex-col">
-        <div class="m-5 text-cyan-800">
-          Bill
-        </div>
-        <div class="bg-cyan-50 flex justify-between mx-5 rounded-2xl">
-          <img class="mx-14 mt-1.5 my-15 h-6 w-5" src="./images/icon-dollar.svg">
-          <input type="number"  value="" class=" factura w-20 bg-cyan-50 ">
-        </div>
-      </div>
 
-      <div class=>
-        <div class="m-5 text-cyan-800">
-          Select Tip %
-        </div>
-        <div class="grid grid-rows-3 grid-flow-col">
-          <div class="bg-cyan-950 h-14 w-44  hover:bg-cyan-300/50 hover:text-black text-white grid place-self-center rounded-2xl m-0.5">
-            <button class="porcentaje5 grid place-content-center">
-              5%
-            </button>
+  <div class="lg:grid lg:place-content-center">
+    <div class="sm:h-[84vh] lg:h-20 lg:rounded-xl bg-white lg: ">
+      <div class="rounded-3xl lg:flex lg:flex-row ">
+        <div class="lg:flex lg:flex-col lg:justify-center">
+          <div class="flex flex-col">
+            <div class="m-5 text-cyan-800 lg:mx-5 my-2">
+              Bill
+            </div>
+            <div class="bg-cyan-50 flex justify-between mx-5 rounded-2xl">
+              <img class="mx-14 mt-1.5 my-15 h-6 w-5" src="./images/icon-dollar.svg">
+              <input type="number"  value="" class=" factura w-20 bg-cyan-50 ">
+            </div>
           </div>
-          <div class="bg-cyan-950 h-14 w-44 hover:bg-cyan-300/50 hover:text-black text-white grid place-self-center rounded-2xl m-0.5">
-            <button class="porcentaje10 grid place-content-center">
-              10%
-            </button>
+          <div class=>
+            <div class="m-5 text-cyan-800 lg:mx-5 my-2">
+              Select Tip %
+            </div>
+            <div class="grid grid-rows-3 grid-flow-col lg:grid-rows-2">
+              <div class="bg-cyan-950  hover:bg-cyan-300/50 hover:text-black text-white grid place-self-center rounded-2xl h-14 w-44 m-0.5 lg:h-8 lg:w-20 lg:rounded-lg lg:gap-2 ">
+                <button class="porcentaje5 grid place-content-center">
+                  5%
+                </button>
+              </div>
+              <div class="bg-cyan-950 h-14 w-44 hover:bg-cyan-300/50 hover:text-black text-white grid place-self-center rounded-2xl m-0.5 lg:h-8 lg:w-20 lg:rounded-lg lg:gap-2">
+                <button class="porcentaje10 grid place-content-center">
+                  10%
+                </button>
+              </div>
+              <div class="bg-cyan-950 h-14 w-44 hover:bg-cyan-300/50 hover:text-black text-white grid place-self-center rounded-2xl m-0.5 lg:h-8 lg:w-20 lg:rounded-lg lg:gap-2">
+                <button class="porcentaje15 grid place-content-center">
+                  15%
+                </button>
+              </div>
+              <div class=" bg-cyan-950 h-14 w-44 hover:bg-cyan-300/50 hover:text-black text-white grid place-self-center rounded-2xl m-0.5 lg:h-8 lg:w-20 lg:rounded-lg lg:gap-2">
+                <button class="porcentaje25 grid place-content-center">
+                  25%
+                </button>
+              </div>
+              <div class="bg-cyan-950 h-14 w-44 hover:bg-cyan-300/50 hover:text-black text-white grid place-self-center rounded-2xl m-0.5 lg:h-6 lg:w-14 lg:rounded-lg lg:gap-2">
+                <button class="porcentaje50 grid place-content-center">
+                  50%
+                </button>
+              </div>
+              <div class="grid place-self-center h-14 w-5/6 lg:h-8 lg:w-20 lg:rounded-lg lg:gap-2">
+                <button class="text-cyan-900 grid place-content-center">
+                  Custom
+                </button>
+              </div>
+            </div>
           </div>
-          <div class="bg-cyan-950 h-14 w-44 hover:bg-cyan-300/50 hover:text-black text-white grid place-self-center rounded-2xl m-0.5">
-            <button class="porcentaje15 grid place-content-center">
-              15%
-            </button>
-          </div>
-          <div class=" bg-cyan-950 h-14 w-44 hover:bg-cyan-300/50 hover:text-black text-white grid place-self-center rounded-2xl m-0.5">
-            <button class="porcentaje25 grid place-content-center">
-              25%
-            </button>
-          </div>
-          <div class="bg-cyan-950 h-14 w-44 hover:bg-cyan-300/50 hover:text-black text-white grid place-self-center rounded-2xl m-0.5">
-            <button class="porcentaje50 grid place-content-center">
-              50%
-            </button>
-          </div>
-          <div class="grid place-self-center h-14 w-5/6 ">
-            <button class="text-cyan-900 grid place-content-center">
-              Custom
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col">
-        <div class="m-5 text-cyan-800">
-          Number of People
-        </div>
-        <div class="bg-cyan-50 flex justify-between mx-5 rounded-2xl">
-          <img class="mx-14 mt-1.5 my-15 h-6 w-5" src="./images/icon-person.svg">
-          <input type="number"  value="" class=" cantidadpersonas w-20 bg-cyan-50 ">
-
-        </div>
-      </div>
-      <div class="bg-cyan-950 flex flex-col my-7 mx-5 rounded-3xl h-60">
-        <div class="flex justify-between">
-          <div class="mx-5 my-2 text-white">
-            <p>
-              Tip Amount
-            </p>
-            <p class="-mt-2 text-base text-neutral-500">
-              / person
-            </p>
-          </div>
-          <div>
-            <p class=" propinapersona m-5 text-cyan-200/80">
-              $ 12.5
-            </p>
-          </div>
-        </div>
-        <div class="flex justify-between mb-7">
-          <div class="mx-5 my-2 text-white">
-            <p>
-              Total
-            </p>
-            <p class="-mt-2 text-base text-neutral-500">
-              / person
-            </p>
-          </div>
-          <div>
-            <p class="propinatotal text-cyan-200/80 m-5 ">
-              $ 12.5
-            </p>
+          <div class="flex flex-col">
+            <div class="m-5 text-cyan-800 lg:mx-5 my-2">
+              Number of People
+            </div>
+            <div>
+              <div class="bg-cyan-50 flex justify-between mx-5 rounded-2xl">
+                <img class="mx-14 mt-1.5 my-15 h-6 w-5" src="./images/icon-person.svg">
+                <input type="number"  value="" class=" cantidadpersonas w-20 bg-cyan-50 ">
+              </div>
+            </div>
           </div>
         </div>
-        <div class="bg-cyan-200/80 h-14 w-5/6 text-white grid place-self-center rounded-2xl -mt-2">
-          <button class="reset text-cyan-900 grid place-content-center">
-            Reset
-          </button>
+        <div class="lg:w-72">
+          <div class="bg-cyan-950 flex flex-col my-7 mx-5 rounded-3xl h-60 ">
+            <div class="flex justify-between">
+              <div class="mx-5 my-2 text-white">
+                <p>
+                  Tip Amount
+                </p>
+                <p class="-mt-2 text-base text-neutral-500">
+                  / person
+                </p>
+              </div>
+              <div>
+                <p class=" propinapersona m-5 text-cyan-200/80">
+                  $ 12.5
+                </p>
+              </div>
+            </div>
+            <div class="flex justify-between mb-7">
+              <div class="mx-5 my-2 text-white">
+                <p>
+                  Total
+                </p>
+                <p class="-mt-2 text-base text-neutral-500">
+                  / person
+                </p>
+              </div>
+              <div>
+                <p class="propinatotal text-cyan-200/80 m-5 ">
+                  $ 12.5
+                </p>
+              </div>
+            </div>
+            <div class="bg-cyan-200/80 h-14 w-5/6 text-white grid place-self-center rounded-2xl -mt-2">
+              <button class="reset text-cyan-900 grid place-content-center">
+                Reset
+              </button>
+            </div>
+          </div>
+  
         </div>
       </div>
     </div>
   </div>
 
-  <script src="./script.js">
-  </script>
 </body>
 </html>
